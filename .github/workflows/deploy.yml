@@ -18,9 +18,12 @@ jobs:
           echo "const SECRET_KEY = '${{ secrets.SECRET_KEY }}';" > link.js
           echo "const SECRET_KEY = '${{ secrets.SECRET_KEY }}';" > env.js
 
-      - name: Deploy to GitHub Pages
+      - name: Ensure Deploy Directory
         run: |
           mkdir -p deploy
+
+      - name: Copy Files to Deploy Directory
+        run: |
           cp index.html deploy/index.html
           cp link.html deploy/link.html
           cp index.js deploy/index.js
