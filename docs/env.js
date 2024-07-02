@@ -1,2 +1,2 @@
 // env.js
-const SECRET_KEY = "{{ secrets.SECRET_KEY }}";
+const SECRET_KEY = "-e9@]+Tj@d5Hsq*u=}o/";
